@@ -1,0 +1,28 @@
+<body>
+    <h1>총단어수:{{total}}
+        <br>
+        <br>
+        입력한 텍스트: {{fulltext}}
+    
+        </h1>
+        <br>
+        <h3>
+        단어 count
+        <br>
+        {%for word, counttotal in dictionary%}
+        {{word}}-{{counttotal}}
+        <br>
+        {%endfor%}
+        <img src="https://66.media.tumblr.com/25089e3d94b19a9e9f1a06f0a2785ed9/tumblr_n4fz47Yl091tzucvno1_500.gif" style="width:auto;">
+        <br>
+        <a href="{%url 'home'%}" >HOME</a> 
+    
+    </h3>
+    </body>
+    <style>
+     body{text-align: center;
+     background-color: lightpink;}
+     h1{color: linen;}
+     h3{color:oldlace;}
+    </style>
+    
